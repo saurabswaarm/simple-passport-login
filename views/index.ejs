@@ -1,0 +1,13 @@
+<h1>Hi <%= name %></h1>
+
+<% if(messages && messages.error) { %>
+    <div><%= messages.error %></div>
+<% } %>
+
+<% if(messages && messages.success) { %>
+    <div><%= messages.success %></div>
+<% } %>
+
+<form action="/logout" method="POST">
+    <input type="submit" value="Logout">
+</form>
